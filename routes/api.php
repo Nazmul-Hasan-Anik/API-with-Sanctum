@@ -16,7 +16,7 @@ use App\Http\Controllers\ProjectController;
 |
 */
 
-Route::post('register',[StudentController::class,""]);
+Route::post('register',[StudentController::class,"register"]);
 Route::post('login',[StudentController::class,""]);
 
 Route::group(["middleware"=>["auth:sanctum"]],function(){
